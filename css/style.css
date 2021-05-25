@@ -142,16 +142,16 @@
             
   width: 90%;
         }
-        .features_main{
+        .features{
   
         }
-        .features_main h5{
+        .features h5{
         color: #008ed6;
         text-transform: uppercase;
         font-size: 17px;
         letter-spacing: 1px;
         }
-        .features_main h1{
+        .features h1{
   
   color: #1a1a1a;
   
@@ -165,39 +165,38 @@
 
     display: inline-block;
     height: 2px;
-    width: 90%;
+    width: 70px;
     position: relative;;
+
 }
-  .heading span::before{
+.heading span::before{
       content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    left: 0;
-    top: 0;
-    background: #008ed6;
-    transition: .5s all ease-in-out;
-      
-        
+      position: absolute;
+      height: 2px;
+      width: 0%;
+      left: 0;
+      top: 0;
+      background-color: #008ed6;
+      transition: .5s all ease-in-out;
 }
 .heading span::after{
       content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    right: 0;
-    top: 0;
-    background: #008ed6;
-    transition: .5s all ease-in-out;
-     
+      position: absolute;
+      height: 2px;
+      width: 0%;
+      right: 0;
+      top: 0;
+      background-color: #008ed6;
+      transition: .5s all ease-in-out;
 }
-.features_main:hover.heading span::before{
+.features:hover .heading span::before{
       width: 45%;
 }
-
-.features:hover.heading span::after{
+.features:hover .heading span::after{
       width: 45%;
 }
+  
+  
 .image{
 
 /* color: #0c0a0a; */
@@ -292,3 +291,19 @@ font-weight: 400;
       
 margin-top: 13px;
 }
+.iphone5{
+      background-color: #f2f2f2;
+}
+.iphone5:hover .heading span::before{
+      width: 45%;
+}
+.iphone5:hover .heading span::after{
+      width: 45%;
+}
+.features_device:hover .heading span::before{
+      width: 45%;
+}
+.features_device:hover .heading span::after{
+      width: 45%;
+}
+  
